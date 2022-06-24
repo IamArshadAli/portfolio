@@ -1,16 +1,236 @@
 <!DOCTYPE html>
 <head>
     <title>ArshadAli Kaldane Portfolio</title>
-    <style>
-        body{
-            background: url("coming_soon.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-        }
-    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- FPJS CSS -->
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>    
+<body>
+
+    <div class="navbar">
+        <a href="#home" id="ak"></a>
+        <ul id="myMenu" class="nav">
+            <li data-menuanchor="about" class="active">
+                <a href="#about" class="nav-link">About Me</a>
+            </li>
+            <li data-menuanchor="work">
+                <a href="#work" class="nav-link">My Work</a>
+            </li>
+            <li data-menuanchor="contact">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li data-menuanchor="resume">
+                <a href="ArshadAli_Resume_compressed.pdf" class="nav-link" target="_blank">Resume</a>
+            </li>
+        </ul>
+    </div>
+    <ul class="social-links">
+        <li><a href="#">
+            <img src="images/github.svg" alt="github">
+        </a></li>
+        <li><a href="#">
+            <img src="images/linkedin.svg" alt="linkedin">
+        </a></li>
+        <li><a href="#">
+            <img src="images/instagram.svg" alt="instagram">
+        </a></li>
+        <!-- <li><a href="#">
+            <img src="images/twitter.svg" alt="twitter">
+        </a></li> -->
+        <li><a href="mailto:arshadalikaldane@gmail.com">
+            <img src="images/gmail.svg" alt="gmail">
+        </a></li>
+    </ul>
+    
+    <div id="fullpage">
+        <!-- Home Page -->
+        <div id="home" class="section fp-responsive">
+            <div class="intro">
+                <div class="greet">Hi, my name is</div>
+                <div class="name">Arshad Ali Kaldane</div>
+                <div class="role">Full Stack Developer</div>
+                <div class="work">I love to build websites. I also do freelancing.</div>
+                <div class="status">I'm currently open for opportunities.</div>
+                <a class="hire" href="mailto:arshadalikaldane@gmail.com">Hire Me ✅</a>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div data-anchor="about" class="section fp-responsive">
+            <div class="wrapper">
+                <div>
+                    <div class="about">
+                        <div class="git">Hello! I'm <span class="light">Arshad Ali</span></div>
+                        <p>I'm a Computer Science graduate having a nice CGPA of 9.43</p>
+                        <p>I like to build things that live on the internet</p>
+                        <p>I have some experience in <span class="light">Designing</span>, <span class="light">Developing</span>, and <span class="light">Deploying</span> software for the web, from simple <span class="light">Portfolio Websites</span> to <span class="light">E-Commerce applications</span></p>
+                        <p>I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn</p>
+                    </div>
+                    
+                    <div class="tech">
+                        <p>Technologies I've worked with</p>
+                        <div>
+                            <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
+                                <img data-src="images/icons/html5.png" alt="HTML5" title="HTML5">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
+                                <img data-src="images/icons/css3.png" alt="CSS3" title="CSS3">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+                                <img data-src="images/icons/javascript.jpg" alt="JS" title="JavaScript">
+                            </a>
+                            <a href="https://getbootstrap.com/" target="_blank">
+                                <img data-src="images/icons/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                            </a>
+                            <a href="https://materializecss.com/" target="_blank">
+                                <img data-src="images/icons/materializecss.png" alt="MaterialCSS" title="MaterialzeCSS">
+                            </a>
+                            <a href="https://python.org/" target="_blank">
+                                <img data-src="images/icons/python.png" alt="Python" title="Python">
+                            </a>
+                            <a href="https://www.djangoproject.com/" target="_blank">
+                                <img data-src="images/icons/django.png" alt="Django" title="Django">
+                            </a>
+                            <a href="https://en.wikipedia.org/wiki/SQL" target="_blank">
+                                <img data-src="images/icons/sql.png" alt="SQL" title="SQL">
+                            </a>
+                            <a href="https://www.postgresql.org/" target="_blank">
+                                <img data-src="images/icons/psql.png" alt="PSQL" title="PostgreSQL">
+                            </a>
+                            <a href="https://aws.amazon.com/" target="_blank">
+                                <img data-src="images/icons/aws.png" alt="AWS" title="AWS">
+                            </a>
+                            <a href="https://cloud.google.com/compute" target="_blank">
+                                <img data-src="images/icons/gcpce.png" alt="GCPCE" title="GCPComputeEngine">
+                            </a>
+                            <a href="https://www.heroku.com/" target="_blank">
+                                <img data-src="images/icons/heroku.png" alt="Heroku" title="Heroku">
+                            </a>
+                            <a href="https://github.com/" target="_blank">
+                                <img data-src="images/icons/github.png" alt="GitHub" title="GitHub">
+                            </a>
+                            <a href="https://www.figma.com/" target="_blank">
+                                <img data-src="images/icons/figma.png" alt="Figma" title="Figma">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Page -->
+        <div data-anchor="work" class="section fp-responsive">
+            
+            <!-- APFF -->
+            <div class="slide">
+                <div class="wrapper">
+                    <div class="left">
+                        <img data-src="images/projects/apff.jpg" alt="APFF">
+                    </div>
+                    <div class="right">
+                        <div class="project-title">Agri Point Farm & Feeds</div>
+                        <div class="project-info">
+                            <p>A Full Stack E-Commerce website built for a startup in Animal Feeds & Agro Tourism</p>
+                            <p>The website allows users to shop for the feeds online!</p>
+                            <p>Built with Django-Python(Backend), Heroku-Postgres(Database), MaterializeCSS(Frontend), Razorpay(Payment Gateway), and Hosted on Google Cloud Platform via Compute Engine</p>
+                        </div>
+                        <a class="project-link" href="https://www.agripointfarmandfeeds.com" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KNK -->
+            <div class="slide">
+                <div class="wrapper">
+                    <div class="left">
+                        <img data-src="images/projects/knk.jpg" alt="KNK">
+                    </div>
+                    <div class="right">
+                        <div class="project-title">KnK Builders & Developers</div>
+                        <div class="project-info">
+                            <p>Company's Portfolio Website showcasing their Projects</p>
+                            <p>Users can make an enquiry from the website</p>
+                            <p>Built with HTML5, CSS3, Bootstrap, and JavaScript</p>
+                        </div>
+                        <a class="project-link" href="http://www.knkbuildersanddevelopers.com" target="_blank">Visit Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DC -->
+            <div class="slide">
+                <div class="wrapper">
+                    <div class="left app">
+                        <img data-src="images/projects/dc.jpg" alt="DC">
+                    </div>
+                    <div class="right">
+                        <div class="project-title">Hotel Dot Com</div>
+                        <div class="project-info">
+                            <p>A Restaurant Food Order Delivery & Delivery App for a restaurant which solves their problem of taking orders over phone call </p>
+                            <p>Converted from web app to android app!</p>
+                            <p>Built with Django-Python(Backend), Heroku-Postgres(Database), MaterializeCSS(Frontend), and used Android Studio to convert</p>
+                        </div>
+                        <a class="project-link" href="https://play.google.com/store/apps/details?id=com.arshadali.hdc&launch=true" target="_blank">Visit Play Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div data-anchor="contact" class="section fp-responsive">
+            <div class="contact">
+                <div class="git">Get In Touch</div>
+                <div class="message">
+                    Currently Looking for Opportunity. <br>
+                    Feel free to connect for Freelance/College project. <br>
+                    Always there to give a Helping Hand 🤝
+                </div>
+                <a class="hello" href="mailto:arshadalikaldane@gmail.com">Say Hello 👋</a>
+            </div>
+            <p class="dev">made with <span style="color:whitesmoke">❤</span> by Arshad Ali</p>
+        </div>
+    </div>
+    
+
+
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script>
+        // toggleLogo
+        window.onload = () => {
+            toggleLogo()
+        }
+        
+        window.addEventListener('hashchange', toggleLogo, false);
+        function toggleLogo() {
+            if (window.location.hash === '#home') {
+                document.getElementById('ak').innerHTML = "<img src='images/activeLogo.svg'>"
+            } else {
+                document.getElementById('ak').innerHTML = "<img src='images/Logo.svg'>"
+            }
+        }
+        
+        
+        new fullpage('#fullpage', {
+            // options
+            loopTop: true,
+            loopBottom: true,
+            autoscrolling: true,
+            scrollHorizontally: true,
+            anchors:['home', 'about', 'work', 'contact'],
+            menu: '#myMenu',
+            animateAnchor: true,
+            dragAndMove: true,
+            //navigation: true,
+            //navigationTooltips: ['Portfolio', 'About', 'Work', 'Contact'],
+            //showActiveTooltip: true,
+            //slidesNavigation: true,
+            responsiveWidth: 900,
+            responsiveSlides: true,
+            credits: false,
+        })
+        fullpage_api.setAllowScrolling(true);
+    </script>
 </body>
 </html>
