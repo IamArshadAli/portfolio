@@ -15,6 +15,18 @@
     background: var(--navy);
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+
+    user-select: var(--green);
+}
+
 body{
     background: linear-gradient(45deg, var(--blue1), var(--blue2));
     /* background: url("coming_soon.jpg"); */
@@ -22,16 +34,6 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-
-    user-select: var(--green);
 }
 
 #ak {
@@ -45,27 +47,25 @@ body{
     content: url("images/activeLogo.svg");
 }
 
-#ak::after {
+#ak::after, #ak::before {
     content: "";
-    width: 100vw;
-    height: 1px;
     position: absolute;
-    top: 50%;
-    left: -20px;
     background-color: black;
     z-index: -1;
 }
 
+#ak::after {
+    width: 100vw;
+    height: 1px;
+    top: 50%;
+    left: -20px;
+}
+
 #ak::before {
-    content: "";
     height: 100vh;
     width: 1px;
-    position: absolute;
     top: -20px;
-    right: 50%;
-    background-color: black;
-    /* transform: rotate(90deg); */
-    z-index: -1;
+    left: 50%;
 }
 
 .nav {
@@ -76,17 +76,16 @@ body{
     gap: 50px;
     
     position: absolute;
-    width: 650px;
     
-    right: 65px;
-    top: 36px;
+    right: 4.5em;
+    top: 3.1em;
     list-style: none;
     z-index: 2;
 }
 
 .nav-link {
     font-family: 'Nunito';
-    font-size: 18px;
+    font-size: 1.2em;
     display: flex;
     align-items: center;
     letter-spacing: 0.01em;
@@ -95,8 +94,6 @@ body{
     
     padding: 8px 20px;
     border-radius: 8px;
-    
-    cursor: pointer;
     box-shadow: 2px 3px var(--shadow);
     
     flex: none;
@@ -109,9 +106,12 @@ a {
     text-decoration: none;
 }
 
+.nav > li > a, .hire, .project-link, .hello {
+    transition: 0.3s ease-in;
+}
+
 .nav > li > a:hover, .hire:hover, .project-link:hover, .hello:hover {
     background-color: var(--green);
-    transition: 0.3s ease-in;
 }
 
 #myMenu > li.active :first-child {
@@ -130,8 +130,6 @@ a {
     gap: 34px;
 
     position: absolute;
-    width: 604px;
-    height: 345px;
     left: 226px;
     top: 198px;
 
@@ -141,7 +139,7 @@ a {
 }
 
 .greet, .status {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .name, .role{
@@ -150,18 +148,18 @@ a {
 }
 
 .name {
-    font-size: 40px;
+    font-size: 4em;
     font-family: 'Nunito';
     color: var(--navy);
 }
 
 .role {
-    font-size: 36px;
+    font-size: 2.8em;
     color: var(--white);
 }
 
 .work {
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
 .status {
@@ -171,10 +169,10 @@ a {
 .hire {
     margin-top: 15px;
     background-color: var(--blue2);
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 15px;
     box-shadow: 5px 5px var(--shadow);
-    width: 125px;
+    width: fit-content;
     text-align: center;
     cursor: pointer;
 }
@@ -205,6 +203,10 @@ a {
 
 .light {
     color: var(--white);
+}
+
+.about p {
+    line-height: 1.75em;
 }
 
 .tech {
@@ -244,17 +246,21 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .project-title {
     color: var(--white);
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 .project-info {
-    display: flex;
-    flex-direction: column;
+    list-style: none;
+}
+
+.project-info li {
+    margin-bottom: 1.75em;
 }
 
 .project-link {
@@ -266,7 +272,7 @@ a {
     box-shadow: 3px 3px var(--shadow);
 }
 
-.fp-arrow:hover {
+.fp-arrow {
     transition: 0.3s ease-in;
 }
 
@@ -294,15 +300,16 @@ a {
     top: 198px;
 }
 
+.git, .message {
+    line-height: 2em;
+}
+
 .git {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 4em;
 }
 
 .message {
-    font-size: 22px;
-    line-height: 45px;
+    font-size: 1.35em;
 }
 
 .hello {

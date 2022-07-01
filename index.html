@@ -10,7 +10,7 @@
 <body>
 
     <div class="navbar">
-        <a href="#home" id="ak"></a>
+        <a href="#home" id="ak"><img src='images/activeLogo.svg'></a>
         <ul id="myMenu" class="nav">
             <li data-menuanchor="about" class="active">
                 <a href="#about" class="nav-link">About Me</a>
@@ -51,7 +51,7 @@
                 <div class="greet">Hi, my name is</div>
                 <div class="name">Arshad Ali Kaldane</div>
                 <div class="role">Full Stack Developer</div>
-                <div class="work">I love to build websites. I also do freelancing.</div>
+                <div class="work">I like to build things that live on the internet</div>
                 <div class="status">I'm currently open for opportunities.</div>
                 <a class="hire" href="mailto:arshadalikaldane@gmail.com">Hire Me ✅</a>
             </div>
@@ -63,10 +63,10 @@
                 <div>
                     <div class="about">
                         <div class="git">Hello! I'm <span class="light">Arshad Ali</span></div>
-                        <p>I'm a Computer Science graduate having a nice CGPA of 9.43</p>
-                        <p>I like to build things that live on the internet</p>
-                        <p>I have some experience in <span class="light">Designing</span>, <span class="light">Developing</span>, and <span class="light">Deploying</span> software for the web, from simple <span class="light">Portfolio Websites</span> to <span class="light">E-Commerce applications</span></p>
-                        <p>I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn</p>
+                        <p>I'm a Computer Science graduate and a tech enthusiast.</p>
+                        <!-- <p>I like to build things that live on the internet</p> -->
+                        <p>I have some experience in <span class="light">Designing</span>, <span class="light">Developing</span>, and <span class="light">Deploying</span> software for the web, from simple <span class="light">Portfolio Websites</span> to <span class="light">E-Commerce applications.</span></p>
+                        <p>I'm always looking for opportunities to work with those who are willing to share their knowledge as much as I want to learn.</p>
                     </div>
                     
                     <div class="tech">
@@ -131,11 +131,11 @@
                     </div>
                     <div class="right">
                         <div class="project-title">Agri Point Farm & Feeds</div>
-                        <div class="project-info">
-                            <p>A Full Stack E-Commerce website built for a startup in Animal Feeds & Agro Tourism</p>
-                            <p>The website allows users to shop for the feeds online!</p>
-                            <p>Built with Django-Python(Backend), Heroku-Postgres(Database), MaterializeCSS(Frontend), Razorpay(Payment Gateway), and Hosted on Google Cloud Platform via Compute Engine</p>
-                        </div>
+                        <ul class="project-info">
+                            <li>A Full Stack E-Commerce website built for a startup in Animal Feeds & Agro Tourism</li>
+                            <li>The website allows users to shop for the feeds online!</li>
+                            <li>Built with Django-Python(Backend), Heroku-Postgres(Database), MaterializeCSS(Frontend), Razorpay(Payment Gateway), and Hosted on Google Cloud Platform via Compute Engine</li>
+                        </ul>
                         <a class="project-link" href="https://www.agripointfarmandfeeds.com" target="_blank">Visit Website</a>
                     </div>
                 </div>
@@ -149,11 +149,11 @@
                     </div>
                     <div class="right">
                         <div class="project-title">KnK Builders & Developers</div>
-                        <div class="project-info">
-                            <p>Company's Portfolio Website showcasing their Projects</p>
-                            <p>Users can make an enquiry from the website</p>
-                            <p>Built with HTML5, CSS3, Bootstrap, and JavaScript</p>
-                        </div>
+                        <ul class="project-info">
+                            <li>Company's Portfolio Website showcasing their Projects</li>
+                            <li>Users can make an enquiry from the website</li>
+                            <li>Built with HTML5, CSS3, Bootstrap, and JavaScript</li>
+                        </ul>
                         <a class="project-link" href="http://www.knkbuildersanddevelopers.com" target="_blank">Visit Website</a>
                     </div>
                 </div>
@@ -167,11 +167,11 @@
                     </div>
                     <div class="right">
                         <div class="project-title">Hotel Dot Com</div>
-                        <div class="project-info">
-                            <p>A Restaurant Food Order Delivery & Delivery App for a restaurant which solves their problem of taking orders over phone call </p>
-                            <p>Converted from web app to android app!</p>
-                            <p>Built with Django-Python(Backend), Heroku-Postgres(Database), MaterializeCSS(Frontend), and used Android Studio to convert</p>
-                        </div>
+                        <ul class="project-info">
+                            <li>A Restaurant Food Order Delivery & Delivery App for a restaurant which solves their problem of taking orders over phone call </li>
+                            <li>Converted from web app to android app!</li>
+                            <li>Built with Django-Python(Backend), Heroku-Postgres(Database), MaterializeCSS(Frontend), and used Android Studio to convert</li>
+                        </ul>
                         <a class="project-link" href="https://play.google.com/store/apps/details?id=com.arshadali.hdc&launch=true" target="_blank">Visit Play Store</a>
                     </div>
                 </div>
@@ -197,11 +197,8 @@
 
     <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script>
-        // toggleLogo
-        window.onload = () => {
-            toggleLogo()
-        }
-        
+
+        // change logo image when user is not on homepage
         window.addEventListener('hashchange', toggleLogo, false);
         function toggleLogo() {
             if (window.location.hash === '#home') {
@@ -211,9 +208,8 @@
             }
         }
         
-        
+        // FullPageJS Settings
         new fullpage('#fullpage', {
-            // options
             loopTop: true,
             loopBottom: true,
             autoscrolling: true,
@@ -222,15 +218,11 @@
             menu: '#myMenu',
             animateAnchor: true,
             dragAndMove: true,
-            //navigation: true,
-            //navigationTooltips: ['Portfolio', 'About', 'Work', 'Contact'],
-            //showActiveTooltip: true,
-            //slidesNavigation: true,
             responsiveWidth: 900,
             responsiveSlides: true,
             credits: false,
         })
-        fullpage_api.setAllowScrolling(true);
+
     </script>
 </body>
 </html>
